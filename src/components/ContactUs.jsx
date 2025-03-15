@@ -10,7 +10,7 @@ function ContactUs() {
                 src={background}
                 alt="Banner Image"
                 fill
-                className="object-fill"
+                className="object-fill xl:pb-0 pb-[120%]"
                 priority
             />
             <div className='absolute left-5 xl:left-10 xl:top-[12%] top-6 flex items-center gap-4 xl:gap-10 w-full px-4'>
@@ -19,7 +19,7 @@ function ContactUs() {
                     <div className="absolute left-0 top-1/2 w-10 sm:w-14 xl:w-[140px] h-2 sm:h-3 xl:h-[14px] bg-black -translate-y-1/2"></div>
                 </div>
             </div>
-            <div className="absolute top-1/4 xl:top-1/2 left-5 xl:left-10 p-4 space-y-3 xl:p-6 xl:space-y-4 max-w-xs sm:max-w-md xl:bg-transparent xl:shadow-none">
+            <div className="absolute top-1/6 xl:top-[40%] left-5 xl:left-10 p-4 space-y-3 xl:p-6 xl:space-y-4 max-w-xs sm:max-w-md xl:bg-transparent xl:shadow-none">
                 <div className="flex items-center space-x-2 xl:space-x-3 text-sm sm:text-lg xl:text-2xl text-black">
                     <FaPhone className="text-black text-xs xl:text-xl" />
                     <span>+123-456-7890</span>
@@ -29,7 +29,7 @@ function ContactUs() {
                     <span>diamondatelierusa@gmail.com</span>
                 </div>
             </div>
-            <div className="absolute bottom-1/3 xl:bottom-1/3 right-0 xl:right-8 p-1 xl:p-3 text-sm sm:text-base xl:text-2xl font-medium text-center">
+            <div className="absolute bottom-[65%] xl:bottom-1/4 right-0 xl:right-8 p-1 xl:p-3 text-sm md:text-base xl:text-2xl font-medium text-center">
                 <p>
                     You demand, <br /> we deliver.
                 </p>
