@@ -5,7 +5,7 @@ import background from '../../public/images/background-catalog.png'
 
 function WelcomePage() {
   return (
-    <div className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+    <div className="relative w-full min-h-screen flex items-center justify-center overflow-hidden font-montserrat">
       <Image
         src={background}
         alt="Banner Image"
@@ -13,11 +13,7 @@ function WelcomePage() {
         className="object-fill xl:pb-0 pb-[120%]"
         priority
       />
-
-      {/* Overlay for better readability */}
       <div className="absolute inset-0" />
-
-      {/* Text Elements */}
       <div className="absolute top-6 right-6 text-sm xl:text-xl font-normal text-black">
         Lab Grown Diamonds
       </div>
@@ -27,11 +23,8 @@ function WelcomePage() {
       <div className="absolute xl:bottom-24 xl:left-10 xl:text-xl text-xs left-1 bottom-[60%] font-normal text-black">
         Wholesale Catalogue 2025
       </div>
-
-      {/* Bracelets Section */}
       <div className="absolute xl:bottom-1/7 bottom-[60%] right-5 xl:right-10 flex items-center xl:px-6 py-4">
-        {/* <ChevronLeft className="w-5 h-5 mr-3 text-black" /> */}
-        <span className="xl:text-4xl text-xs font-normal text-black">
+        <span className="xl:text-4xl text-xs font-normal text-black font-montserrat">
           BRACELETS
         </span>
       </div>

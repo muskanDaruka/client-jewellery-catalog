@@ -5,7 +5,7 @@ import { FaPhone, FaEnvelope } from "react-icons/fa";
 
 function ContactUs() {
     return (
-        <div className='relative w-full h-screen'>
+        <div className='relative w-full h-screen font-montserrat'>
             <Image
                 src={background}
                 alt="Banner Image"

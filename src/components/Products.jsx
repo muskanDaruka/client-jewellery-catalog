@@ -6,11 +6,11 @@ function Products() {
     const braceletList = Array(8).fill({ img: bracelet, alt: "bracelet" });
 
     return (
-        <div className='bg-[#e1e1db] px-6 py-4 h-screen pt-5'>
+        <div className='bg-[#e1e1db] px-6 py-4 h-screen pt-5 font-montserrat'>
             <p className="xl:text-base text-xs font-medium text-right">DIAMOND ATELIER</p>
             <div className="flex justify-between items-center pb-2">
             <div className="flex items-center w-full">
-                    <h1 className="xl:text-5xl font-semibold mr-4">Products</h1>
+                    <h1 className="xl:text-5xl font-semibold mr-4">PRODUCTS</h1>
                     <div className="flex-1 border-t border-gray-400"></div>
                 </div>
             </div>

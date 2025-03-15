@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 function AboutUs() {
     return (
-        <div className='relative w-full h-screen'>
+        <div className='relative w-full h-screen font-montserrat'>
             <Image
                 src={background}
                 alt="Banner Image"
