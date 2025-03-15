@@ -1,10 +1,11 @@
-import Product from '@/components/Product'
+// import Product from '@/components/Product'
+import Products from '@/components/Products'
 import React from 'react'
 
 function page() {
   return (
     <div>
-        <Product/>
+        <Products/>
     </div>
   )
 }
