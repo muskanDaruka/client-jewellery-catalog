@@ -1,5 +1,5 @@
 import React from 'react'
-import bracelet from '../../public/images/bracelet.jpg'
+import bracelet from '../../public/images/bracelets-img.png'
 import Image from 'next/image'
 
 function Products() {
@@ -14,7 +14,7 @@ function Products() {
                     <div className="flex-1 border-t border-gray-400"></div>
                 </div>
             </div>
-            <div className="grid grid-cols-4 gap-4 mt-8 xl:mt-10">
+            <div className="grid grid-cols-4 xl:gap-4 gap-2 mt-8 xl:mt-10">
                 {braceletList.map((item, index) => (
                     <div key={index} className="w-full">
                         <Image

@@ -1,12 +1,11 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, EffectCreative } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "swiper/css/effect-fade";
-
+import "swiper/css/effect-creative";
 import WelcomePage from "@/components/WelcomePage";
 import Products from "@/components/Products";
 import ContactUs from "@/components/ContactUs";
@@ -18,9 +17,21 @@ const CatalogSwiper = () => {
   return (
     <div className="flex justify-center items-center relative">
       <Swiper
-        modules={[Navigation, Pagination]}
+        modules={[Navigation, Pagination, EffectCreative]}
         navigation
         pagination={{ clickable: true }}
+        effect="creative"
+        creativeEffect={{
+          prev: {
+            shadow: true,
+            translate: [0, 0, -400],
+            rotate: [0, -90, 0],
+          },
+          next: {
+            translate: [0, 0, -400],
+            rotate: [0, 90, 0],
+          },
+        }}
         className="xl:w-[140vmin] h-[95vmin] aspect-square"
       >
         {[
@@ -39,23 +50,21 @@ const CatalogSwiper = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-
-      {/* Apply Tailwind Styles to Swiper Buttons */}
       <style>
         {`
+          /* Styling the Swiper Buttons */
           .swiper-button-next, .swiper-button-prev {
-            width: 32px !important;
-            height: 32px !important;
-            // background-color: rgba(248, 248, 248, 0.6) !important;
+            width: 14px !important;
+            height: 28px !important;
             border-radius: 50% !important;
           }
           
           .swiper-button-next::after, .swiper-button-prev::after {
-            font-size: 16px !important; /* Reduce the arrow size */
+            font-size: 22px !important;
             color: black !important;
           }
         `}
-      </style>
+        </style>
     </div>
   );
 };

@@ -15,10 +15,10 @@ function Bracelet() {
         { id:'bazel-bracelet', img: bracelet, alt: "Emerald Bracelet" },
     ];
     return (
-        <div className='bg-[#e1e1db] px-6 py-4 h-screen pt-5 font-montserrat'>
-            <h4 className='text-sm font-normal text-center p-2'>DIAMOND ATELIER</h4>
+        <div className='bg-[#e1e1db] xl:px-6 xl:py-4 p-2 h-screen pt-5 font-montserrat'>
+            <h4 className='xl:text-xl text-sm  font-normal text-center xl:p-5'>DIAMOND ATELIER</h4>
             <div
-                className="grid grid-cols-4 gap-6 w-full relative pt-4"
+                className="grid grid-cols-4 xl:gap-6 gap-2 w-full relative pt-4"
             >
                 {braceletList.map((item, index) => (
                     <div key={index} className="bg-[#faf7f1] p-2">
@@ -33,7 +33,7 @@ function Bracelet() {
                                 />
                             </Link>
                         </div>
-                        <h1 className="text-center text-sm mt-2 font-medium cursor-pointer text-[#6d5a4e]">{item.alt}</h1>
+                        <h1 className="text-center text-xs mt-2 font-medium cursor-pointer text-[#6d5a4e]">{item.alt}</h1>
                     </div>
                 ))}
             </div>
